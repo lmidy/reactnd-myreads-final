@@ -34,11 +34,11 @@ You can now view myreads-app in the browser.
  ```
 Validate My Reads home page loads:
 
-![MyReads Home Screenshot](https://github.com/lmidy/reactnd-project-myreads-final/blob/master/MyReads_Home.jpeg)
+![MyReads Home Screenshot](https://github.com/lmidy/reactnd-myreads-final/blob/master/MyReads_Home.jpeg)
 
 Navigate to search page
 
-![MyReads Search Page Screenshot Sample](https://github.com/lmidy/reactnd-project-myreads-final/blob/master/MyReads_search.jpeg)
+![MyReads Search Page Screenshot Sample](https://github.com/lmidy/reactnd-myreads-final/blob/master/MyReads_search.jpeg)
 
 Execute some of the scenarios identified in [Rubric](https://review.udacity.com/#!/rubrics/918/view)
 * Go to search page and search "react" and add a book to any shelf
