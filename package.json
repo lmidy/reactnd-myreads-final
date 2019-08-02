@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "debounce": "^1.2.0",
+    "fsevents": "^2.0.7",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.1",
-    "throttle-debounce": "^2.1.0"
+    "react-scripts": "^3.0.1",
+    "throttle-debounce": "^2.1.0",
+    "tsutils": "^3.14.1",
+    "typescript": "^3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",
