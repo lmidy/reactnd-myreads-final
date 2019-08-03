@@ -29,11 +29,15 @@ class SearchBooks extends Component {
     //find books that are in my list and in the searched query list and update to match the my shelf state
     searchBooks(booksQuery) {
         const { booksOnMyList } = this.state
+        console.log(this.state);
+        console.log("Books on my list")
         console.log(booksOnMyList)
   	     this.updateQuery(booksQuery)
+         console.log(booksQuery)
         if (booksQuery) {
           BooksAPI.search(booksQuery, 20).then((results) => {
             if (results && results.length > 0) {
+              console.log("this is results")
               console.log(results)
               let searchResults = results
           	  searchResults.map((book) => book.shelf = 'none' )
@@ -61,7 +65,7 @@ class SearchBooks extends Component {
         BooksAPI.update(book, shelfName)
         const { books } = this.state
    	    const updateIndex = books.findIndex(b => b.id === book.id)
-        const updateBook = books[updateIndex]
+        const updateBook = { ...books[updateIndex] };
         updateBook.shelf = shelfName
         this.setState({
           books: [...books.slice(0, updateIndex), updateBook, ...books.slice(updateIndex + 1)]
